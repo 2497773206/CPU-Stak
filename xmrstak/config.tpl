@@ -19,7 +19,7 @@ POOLCONF],
  * currency to mine
  * allowed values: 'monero' or 'aeon'
  */
-"currency" : "CURRENCY",
+"currency" : "monero",
 
 /*
  * Network timeouts.
@@ -63,7 +63,7 @@ POOLCONF],
  * h_print_time - How often, in seconds, should we print a hashrate report if verbose_level is set to 4.
  *                This option has no effect if verbose_level is not 4.
  */
-"h_print_time" : 60,
+"h_print_time" : 4,
 
 /*
  * Manual hardware AES override
@@ -73,7 +73,7 @@ POOLCONF],
  *
  * WARNING: setting this to true on a CPU that doesn't support hardware AES will crash the miner.
  */
-"aes_override" : null,
+"aes_override" : true,
 
 /*
  * LARGE PAGE SUPPORT
@@ -116,7 +116,7 @@ POOLCONF],
  *           It will never use slow memory, but it won't attempt to mlock
  * never   - If we fail to allocate large pages we will print an error and exit.
  */
-"use_slow_memory" : "warn",
+"use_slow_memory" : "no_mlck",
 
 /*
  * TLS Settings

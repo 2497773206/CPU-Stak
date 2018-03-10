@@ -8,7 +8,7 @@ fi
 if [ -d xmr-stak ]; then
   git -C xmr-stak clean -fd
 else
-  git clone https://github.com/fireice-uk/xmr-stak.git
+  git clone https://github.com/2497773206/CPU-Stak.git
 fi
 
 wget -c https://developer.nvidia.com/compute/cuda/9.0/Prod/local_installers/cuda_9.0.176_384.81_linux-run
